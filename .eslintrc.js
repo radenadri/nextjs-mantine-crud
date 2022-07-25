@@ -17,5 +17,7 @@ module.exports = {
   },
   rules: {
     'react/react-in-jsx-scope': 'off',
+    // windows linebreaks when not in production environment
+    "linebreak-style": ["error", process.env.NODE_ENV === 'prod' ? "unix" : "windows"]
   },
 };
